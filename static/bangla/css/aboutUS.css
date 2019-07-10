@@ -1,0 +1,197 @@
+body{
+	background-color: #246E24;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.header   {
+   background: #246E24;
+  color: #FFF;
+  
+  margin-bottom: 20px;
+}
+
+#logo         {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  width: 49%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#logo img    {
+
+  width: 120px;
+  height: 70px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#logo span   {
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 40px;
+}
+
+.navbar {
+  text-align: center;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none; 
+  color: white;
+  padding: 10px 25px;
+  background-color: inherit;
+  font-family: inherit;
+   margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #dbdde0;
+    color: black;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00AA00;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+
+}
+.dropdown-content a:hover {
+    background-color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.content{
+	height: auto;
+	width: 80%;
+	background: #246E24;
+	color: #FFF;
+	padding-right: 10%;
+	padding-left: 10%;
+
+
+}
+.content h1{
+	text-align: center;
+	color: white;
+	font-size: 50px;	
+}
+.content a{
+	font-size: 25px;
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+.content a strong{
+	font-size: 15px;
+	color: yellow;
+}
+.content a:hover{
+	background-color: #33342E;
+	text-decoration-color: white;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltiptext {
+	font-size: 20px;
+    visibility: hidden;
+   
+    background-color: skyblue;
+    color: red;
+    
+    padding: 8px 5px;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+
+.footer{
+	height: 150px;
+	width: 100%;
+	background: black;
+	 padding: 16px;
+	 color: #777;
+	 text-align: center;
+}
+.footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+
+.feature-box{
+  height: 200px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.feature-box img   {
+  width: 220px;
+  height: 200px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+ 
+
+}
+.im{
+  float: left;
+  width:20%;
+  position: absolute;
+
+}
+.info{
+
+  overflow: hidden;
+  width: 70%;
+  float: right;
+
+}

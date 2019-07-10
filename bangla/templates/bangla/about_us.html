@@ -1,0 +1,110 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Live24Hours</title>
+		<link rel="stylesheet" href="{% static 'bangla/css/aboutUS.css'%}">
+	</head>
+
+	<body>	
+		<div class="header">
+			<a id="logo" href="{% url 'bangla/home'%}">
+            <img src="{% static 'images/logo.jpg'%}" alt="logo">
+	            
+	            <span>Live24Hours</span>
+        	</a>
+
+
+				<div class="navbar">
+					<a href="{% url 'bangla/home'%}">Home</a>										
+					<div class="dropdown">
+					  	<button class="dropbtn">NewsPapers <i class="fa fa-caret-down"></i>
+		    			</button>
+		    			<div class="dropdown-content">
+						      <a href="#">BDnews24</a>
+						      <a href="#">DailyStar</a>
+						      <a href="#">DhakaTribune</a>
+						      <a href="#">BBC Bangla</a>
+						      <a href="#">Kaler kantha</a>
+						      <a href="#">Jugantor</a>
+						      <a href="#">Jonokantha</a>
+
+
+						    </div>
+					</div>    
+					<div class="dropdown">
+						<button class="dropbtn">Category <i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="{% url 'english/home'%}">English</a>
+							<a href="{% url 'bangla/home'%}">Bangla</a>
+						</div>
+					</div>
+						<a href="{%url 'bangla/national'%}">National</a>
+						<a href="{% url 'bangla/international'%}">International</a>
+						<a href="{%url 'bangla/sports'%}">Politics</a>
+			
+						<a href="{%url 'bangla/politics'%}">Politics</a>
+						<a href="{% url 'bangla/entertainment'%}">Entertainmnet</a>
+						<a href="{%url 'bangla/technology'%}">Technology</a>
+						
+						<a href="#">About Us</a>
+		
+				</div>
+		</div>
+
+		<div class="content">
+			<h1>About Us</h1>
+			<p style="font-size: 20px">
+				Nowadays a lot of online newspaper provide news 24 hours. one have to visit so many newspaper to get all the news. it is a time consuming process. As time is a valueable thing. So we have try to do something about the fact. we develop a news portal, it gives you news from all newspaper from whole country as well as it give you a summurization for a specific news. So you can save your valueable time. 
+				
+			</p>
+			<br><br>
+
+			<h1>Developed By</h1>
+			<br><br>
+
+			<div class="feature-box">
+                    <div class="im">
+                        <img src="{% static 'images/imran.jpg'%}" alt="Fun to Use">
+                    </div>
+                    <div class="info">
+                            <h2 style="font-size: 35px">Md. Sabbir Hossain</h2>
+                            <p style="font-size: 20px">
+                                Hajee Mohammad Danesh science and Technology University<br>
+                                Dept. Of Computer Science And Engineering
+                            </p>
+                </div>
+             </div> 
+
+             <div class="feature-box">
+                    <div class="im">
+                        <img src="{% static 'images/technology.jpg'%}" alt="Fun to Use">
+                    </div>
+                    <div class="info">
+                            <h2 style="font-size: 35px">Md Shariful Islam</h2>
+                            <p style="font-size: 20px">
+
+                                Hajee Mohammad Danesh science and Technology University<br>
+                                Dept. Of Computer Science And Engineering
+                            </p>
+                </div>
+             </div> 
+
+             
+			
+		</div>
+
+
+		<div class="footer">
+			<img src="{% static 'images/logo.jpg'%}" alt="logo">
+
+	        <!--<img src="img/avatar.jpeg" alt="Footer Logo">-->
+	        <span>My Website<br>Copyright &copy; 2018-3010 </span>
+			
+		</div>
+
+		
+
+	</body>
+</html>

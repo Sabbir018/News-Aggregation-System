@@ -1,0 +1,112 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Live24Hours</title>
+		<link rel="stylesheet" href="{% static 'bangla/css/aboutUS.css'%}">
+	</head>
+
+	<body>	
+		<div class="header">
+			<a id="logo" href="{% url 'english/home'%}">
+            <img src="{% static 'images/logo.jpg'%}" alt="logo">
+	            
+	            <span style = "color:#56d8da" >
+	            	<h2 style = "font-size:50px">News Bangladesh
+	            	</h2>
+	            </span>
+        	</a>
+
+
+				<div class="navbar">
+					<a href="{% url 'english/home'%}">Home</a>										
+					<div class="dropdown">
+					  	<button class="dropbtn">NewsPapers <i class="fa fa-caret-down"></i>
+		    			</button>
+		    			<div class="dropdown-content">
+						      <a href="#">BDnews24</a>
+						      <a href="#">DailyStar</a>
+						      <a href="#">DhakaTribune</a>
+						      <a href="#">BBC Bangla</a>
+						      <a href="#">Kaler kantha</a>
+						      <a href="#">Jugantor</a>
+						      <a href="#">Jonokantha</a>
+
+
+						    </div>
+					</div>    
+					<div class="dropdown">
+						<button class="dropbtn">Category <i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="{% url 'english/home'%}">English</a>
+							<a href="{% url 'bangla/home'%}">Bangla</a>
+						</div>
+					</div>
+						<a href="{%url 'english/national'%}">National</a>
+						<a href="{%url 'english/international'%}">International</a>
+					
+						<a href="{%url 'english/sports'%}">sports</a>
+						<a href="{%url 'english/politics'%}">Politics</a>
+						<a href="{%url 'english/entertainment'%}">Entertainment</a>
+						<a href="{%url 'english/technology'%}">Technology</a>
+						<a href="{% url 'english/about'%}">About Us</a>
+		
+		
+				</div>
+		</div>
+
+		<div class="content">
+			<h1>About Us</h1>
+			<p style="font-size: 20px">
+				Newspaper is a vital feature of our daily life. Reading newspaper is a good habit. As technology has developed and electronic devices like mobile, laptop are cheap, every newspaper has created their web version which we can access through internet and we don’t need to wait a whole night to get news on next day morning. We can just search any newspaper in any web browser and get news. But it is a problem to remember all the newspaper names and search them online one by one. It would be nice if you can get links of all newspaper websites in a single webpage and can open any online newspaper by just one click. In our website you will get this service. How good it would be if you can read top headlines of all Bangladesh online newspapers by just visiting a single website. You will also get this service from our website. It would be great if along with headlines we provide a brief summary of associated news articles which may help you to decide whether you want to read the whole news or not.
+			</p>
+			<br><br>
+
+			<h1>Developed By</h1>
+			<br><br>
+
+			<div class="feature-box">
+                    <div class="im">
+                        <img src="{% static 'images/imran.jpg'%}" alt="Fun to Use">
+                    </div>
+                    <div class="info">
+                            <h2 style="font-size: 35px">Md Imran Hossain</h2>
+                            <p style="font-size: 20px">
+                                Hajee Mohammad Danesh science and Technology University<br>
+                                Dept. Of Computer Science And Engineering
+                            </p>
+                </div>
+             </div> 
+
+             <div class="feature-box">
+                    <div class="im">
+                        <img src="{% static 'images/technology.jpg'%}" alt="Fun to Use">
+                    </div>
+                    <div class="info">
+                            <h2 style="font-size: 35px">Md Shariful Islam</h2>
+                            <p style="font-size: 20px">
+
+                                Hajee Mohammad Danesh science and Technology University<br>
+                                Dept. Of Computer Science And Engineering
+                            </p>
+                </div>
+             </div> 
+
+             
+			
+		</div>
+
+
+		<div class="footer">
+			<img src="{% static 'images/logo.jpg'%}" alt="logo">
+
+	        <!--<img src="img/avatar.jpeg" alt="Footer Logo">-->
+	        <span>News Bangladesh<br>Copyright &copy; 2018-3010 </span>
+			
+		</div>
+
+		
+
+	</body>
+</html>
